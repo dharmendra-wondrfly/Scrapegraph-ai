@@ -55,6 +55,48 @@ PROGRAM_PATH_KEYWORDS: tuple[str, ...] = (
     "schedule",
 )
 
+# Paths that almost never carry program data and that dilute the LLM's signal.
+# A URL whose path contains any of these AND zero positive keywords is dropped.
+NEGATIVE_PATH_KEYWORDS: tuple[str, ...] = (
+    "blog",
+    "news",
+    "press",
+    "careers",
+    "career",
+    "jobs",
+    "job-",
+    "privacy",
+    "terms",
+    "legal",
+    "cookie",
+    "login",
+    "signin",
+    "sign-in",
+    "account",
+    "cart",
+    "checkout",
+    "wp-content",
+    "wp-admin",
+    "/tag/",
+    "/category/",
+    "/author/",
+    "/feed",
+    "/rss",
+    "sitemap",
+)
+
+# Paths we want to surface to a *provider-profile* prompt, separate from program URLs.
+AUX_PATH_KEYWORDS: tuple[str, ...] = (
+    "about",
+    "contact",
+    "location",
+    "locations",
+    "team",
+    "staff",
+    "who-we-are",
+    "our-story",
+)
+
 
 def _strip_ns(tag: str) -> str:
     return _NS_STRIP.sub("", tag)
@@ -86,6 +128,20 @@ def _same_site(url: str, base_netloc: str) -> bool:
 def _score_url(url: str) -> int:
     path = urlparse(url).path.lower()
     return sum(1 for kw in PROGRAM_PATH_KEYWORDS if kw in path)
+
+
+def _score_components(url: str) -> tuple[int, int]:
+    """Return (positive_kw_hits, negative_kw_hits) for a URL path."""
+    path = urlparse(url).path.lower()
+    pos = sum(1 for kw in PROGRAM_PATH_KEYWORDS if kw in path)
+    neg = sum(1 for kw in NEGATIVE_PATH_KEYWORDS if kw in path)
+    return pos, neg
+
+
+def _is_aux_url(url: str) -> bool:
+    """True when the URL looks like an about/contact/location page."""
+    path = urlparse(url).path.lower()
+    return any(kw in path for kw in AUX_PATH_KEYWORDS)
 
 
 def _fetch_html_playwright(url: str, *, headless: bool, loader_kwargs: dict) -> str | None:
@@ -234,7 +290,17 @@ def discover_program_urls(
     home = base.rstrip("/")
     collected.add(home)
 
-    ranked = sorted(collected, key=lambda u: (-_score_url(u), len(u)))
+    def _is_pure_noise(u: str) -> bool:
+        """Drop URLs that hit only negative keywords (blog/news/legal/etc.)."""
+        if u == home:
+            return False
+        pos, neg = _score_components(u)
+        return neg > 0 and pos == 0
+
+    ranked = sorted(
+        collected,
+        key=lambda u: (-_score_components(u)[0], _score_components(u)[1], len(u)),
+    )
     out: list[str] = []
     seen_out: set[str] = set()
 
@@ -248,12 +314,52 @@ def discover_program_urls(
             continue
         if not _same_site(u, base_netloc):
             continue
+        if _is_pure_noise(u):
+            continue
         out.append(u)
         seen_out.add(u)
         if len(out) >= max_urls:
             break
 
     return out[:max_urls]
+
+
+def discover_program_and_aux_urls(
+    base_url: str,
+    *,
+    max_urls: int = 40,
+    seed_depth: int = 2,
+    headless: bool = True,
+    loader_kwargs: dict | None = None,
+    max_aux: int = 2,
+) -> tuple[list[str], list[str]]:
+    """Run discovery and partition the result into (program_urls, aux_urls).
+
+    ``aux_urls`` is a small set of about/contact/location pages (at most
+    ``max_aux``) suitable for the provider-profile extraction prompt. They are
+    REMOVED from the returned ``program_urls`` so the program prompt is not
+    diluted by non-program content. The base URL is always retained in
+    ``program_urls``.
+    """
+    discovered = discover_program_urls(
+        base_url,
+        max_urls=max_urls + max_aux,
+        seed_depth=seed_depth,
+        headless=headless,
+        loader_kwargs=loader_kwargs,
+    )
+
+    base_canonical = _canonical_base(base_url).rstrip("/")
+
+    aux: list[str] = []
+    program: list[str] = []
+    for u in discovered:
+        if len(aux) < max_aux and u != base_canonical and _is_aux_url(u):
+            aux.append(u)
+        else:
+            program.append(u)
+
+    return program[:max_urls], aux
 
 
 def iter_unique(urls: Iterable[str]) -> list[str]:

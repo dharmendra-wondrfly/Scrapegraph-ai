@@ -67,5 +67,22 @@ class Program(BaseModel):
     prices: List[PriceEntry] = Field(default_factory=list)
 
 
+class ProviderProfile(BaseModel):
+    """Provider-level details extracted from homepage + about/contact pages.
+
+    Added alongside the existing program schema (additive only — no changes to
+    Program / AgeGroup / PriceEntry / ScheduleEntry / TimeBlock).
+    """
+
+    name: str = ""
+    address: str = ""
+    phone: str = ""
+    email: str = ""
+    description: str = ""
+    categories: List[str] = Field(default_factory=list)
+    subjects: List[str] = Field(default_factory=list)
+
+
 class ProgramsResponse(BaseModel):
     programs: List[Program] = Field(default_factory=list)
+    provider: ProviderProfile = Field(default_factory=ProviderProfile)
