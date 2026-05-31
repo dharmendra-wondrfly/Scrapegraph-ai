@@ -1,0 +1,77 @@
+{
+  "programs": [
+    {
+      "name": "Junior ROGY Clinics",
+      "minAge": 4,
+      "maxAge": 17,
+      "schedules": [
+        "Spring Clinics: April 20 - May 15"
+      ],
+      "prices": [
+        {
+          "price": "Price can be discussed",
+          "priceUnit": "per session",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "duration": "no data available"
+        }
+      ],
+      "type": "classes",
+      "joiningLink": "no data available"
+    },
+    {
+      "name": "High Performance Clinics",
+      "minAge": 4,
+      "maxAge": 17,
+      "schedules": [
+        "Winter Season",
+        "Summer Season"
+      ],
+      "prices": [
+        {
+          "price": "Price can be discussed",
+          "priceUnit": "per session",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "duration": "no data available"
+        }
+      ],
+      "type": "classes",
+      "joiningLink": "no data available"
+    },
+    {
+      "name": "Junior (ROGY) Camp",
+      "minAge": 4,
+      "maxAge": 17,
+      "schedules": [
+        "Summer Season"
+      ],
+      "prices": [
+        {
+          "price": "Price can be discussed",
+          "priceUnit": "per session",
+          "priceType": "Camps",
+          "duration": "no data available"
+        }
+      ],
+      "type": "camps",
+      "joiningLink": "no data available"
+    },
+    {
+      "name": "High Performance Camp",
+      "minAge": 4,
+      "maxAge": 17,
+      "schedules": [
+        "Summer Season"
+      ],
+      "prices": [
+        {
+          "price": "Price can be discussed",
+          "priceUnit": "per session",
+          "priceType": "Camps",
+          "duration": "no data available"
+        }
+      ],
+      "type": "camps",
+      "joiningLink": "no data available"
+    }
+  ]
+}

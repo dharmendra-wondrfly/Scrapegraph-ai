@@ -1,0 +1,181 @@
+{
+  "programs": [
+    {
+      "name": "HFA Preschool",
+      "description": "A comprehensive early childhood education program that equips children ages 3-5 years old with the knowledge and skills necessary for achievement as they continue their schooling. The curriculum emphasizes both cognitive and social-emotional development; and enhances learning through field trips, onsite experiences, and interactive activities.",
+      "ageGroup": {
+        "minAge": "3",
+        "maxAge": "5"
+      },
+      "activityRecurring": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "08:30",
+        "to": "15:00"
+      },
+      "schedule": {
+        "day": "Monday to Friday",
+        "startTime": "08:30",
+        "endTime": "15:00",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no data available",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In-person",
+      "joiningLink": "https://www.harambeefamilyacademy.org/programs",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per month",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "no data available",
+          "pricePerHour": "no data available",
+          "classDuration": "no data available",
+          "halfOrFullDay": "no data available",
+          "duration": "no data available",
+          "title": "HFA Preschool Monthly Fee",
+          "noOfHours": "no data available",
+          "noOfDays": "no data available",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    },
+    {
+      "name": "Summer Camp",
+      "description": "Harambee’s summer camp inspires children to unleash their creativity and explore new areas of interest. The camp combines academic enrichment, outdoor activities, fun learning experiences and day trips.",
+      "ageGroup": {
+        "minAge": "3",
+        "maxAge": "5"
+      },
+      "activityRecurring": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "08:30",
+        "to": "15:00"
+      },
+      "schedule": {
+        "day": "Monday to Friday",
+        "startTime": "08:30",
+        "endTime": "15:00",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "08:30",
+          "endTime": "15:00",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no data available",
+      "indoorOroutdoor": "Outdoor",
+      "inpersonOrVirtual": "In-person",
+      "joiningLink": "https://www.harambeefamilyacademy.org/programs",
+      "type": "camps",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per week",
+          "priceType": "Camps",
+          "pricePerParticipant": "no data available",
+          "pricePerHour": "no data available",
+          "classDuration": "no data available",
+          "halfOrFullDay": "no data available",
+          "duration": "no data available",
+          "title": "Summer Camp Weekly Fee",
+          "noOfHours": "no data available",
+          "noOfDays": "no data available",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    }
+  ],
+  "discovered_urls": [
+    "https://www.harambeefamilyacademy.org",
+    "https://www.harambeefamilyacademy.org/programs",
+    "https://www.harambeefamilyacademy.org/contact",
+    "https://www.harambeefamilyacademy.org/video-tour",
+    "https://www.harambeefamilyacademy.org/enrollment",
+    "https://www.harambeefamilyacademy.org/parents-q-and-a",
+    "https://www.harambeefamilyacademy.org/news-and-updates"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "programs": [
+    {
+      "programName": "Preschool",
+      "minAge": 3,
+      "maxAge": 5,
+      "schedules": [
+        "no data available"
+      ],
+      "prices": [
+        "no data available"
+      ],
+      "pricingData": "no data available",
+      "type": "classes",
+      "joiningLink": "no data available"
+    },
+    {
+      "programName": "Aftercare",
+      "minAge": 5,
+      "maxAge": 12,
+      "schedules": [
+        "no data available"
+      ],
+      "prices": [
+        "no data available"
+      ],
+      "pricingData": "no data available",
+      "type": "classes",
+      "joiningLink": "no data available"
+    },
+    {
+      "programName": "Mommy & Me STEAM",
+      "minAge": 3,
+      "maxAge": 5,
+      "schedules": [
+        "no data available"
+      ],
+      "prices": [
+        {
+          "price": "Price available",
+          "priceType": "Single class",
+          "duration": "per session"
+        }
+      ],
+      "pricingData": "Price available",
+      "type": "classes",
+      "joiningLink": "no data available"
+    },
+    {
+      "programName": "Back-up Child Care",
+      "minAge": "no data available",
+      "maxAge": "no data available",
+      "schedules": [
+        "no data available"
+      ],
+      "prices": [
+        "no data available"
+      ],
+      "pricingData": "no data available",
+      "type": "classes",
+      "joiningLink": "no data available"
+    },
+    {
+      "programName": "Summer Camp",
+      "minAge": 5,
+      "maxAge": 12,
+      "schedules": [
+        "no data available"
+      ],
+      "prices": [
+        "no data available"
+      ],
+      "pricingData": "no data available",
+      "type": "camps",
+      "joiningLink": "no data available"
+    },
+    {
+      "programName": "Minicamp",
+      "minAge": "no data available",
+      "maxAge": "no data available",
+      "schedules": [
+        "no data available"
+      ],
+      "prices": [
+        "no data available"
+      ],
+      "pricingData": "no data available",
+      "type": "camps",
+      "joiningLink": "no data available"
+    },
+    {
+      "programName": "STEM Classes",
+      "minAge": 5,
+      "maxAge": 12,
+      "schedules": [
+        "no data available"
+      ],
+      "prices": [
+        "no data available"
+      ],
+      "pricingData": "no data available",
+      "type": "classes",
+      "joiningLink": "no data available"
+    }
+  ]
+}

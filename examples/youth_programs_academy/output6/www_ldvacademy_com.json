@@ -1,0 +1,177 @@
+{
+  "programs": [
+    {
+      "name": "Mommy & Me STEAM Classes",
+      "description": "Weekly STEAM Classes for Infants and Toddlers where parents and children explore, play, and grow together.",
+      "ageGroup": {
+        "minAge": "0",
+        "maxAge": "2"
+      },
+      "activityRecurring": {
+        "days": [
+          "Wednesday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "09:30 AM",
+        "to": "10:30 AM"
+      },
+      "schedule": {
+        "day": "Wednesday",
+        "startTime": "09:30 AM",
+        "endTime": "10:30 AM",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Wednesday",
+          "startTime": "09:30 AM",
+          "endTime": "10:30 AM",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "Required",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In-person",
+      "joiningLink": "https://ldvacademy.com/mommy-and-me-steam-classes/",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per session",
+          "priceType": "Single class",
+          "pricePerParticipant": "210",
+          "pricePerHour": "no data available",
+          "classDuration": "6 weeks",
+          "halfOrFullDay": "no data available",
+          "duration": "6 weeks",
+          "title": "Mommy & Me STEAM Classes",
+          "noOfHours": "no data available",
+          "noOfDays": "no data available",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    },
+    {
+      "name": "Aftercare",
+      "description": "STEM-powered learning after school for ages 3-5. Daily hands-on activities, snack time, and free play led by caring instructors. Flexible attendance with a flat rate.",
+      "ageGroup": {
+        "minAge": "3",
+        "maxAge": "5"
+      },
+      "activityRecurring": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "3:00 PM",
+        "to": "6:00 PM"
+      },
+      "schedule": {
+        "day": "Monday",
+        "startTime": "15:00",
+        "endTime": "18:00",
+        "frequency": "Daily"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Friday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        }
+      ],
+      "offerDiscount": "Sibling Discount: 10% off for additional children",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no data available",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "in-person",
+      "joiningLink": "https://ldvacademy.com/aftercare/",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per month",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "280",
+          "pricePerHour": "no data available",
+          "classDuration": "1 month",
+          "halfOrFullDay": "no data available",
+          "duration": "1 month",
+          "title": "Aftercare Program",
+          "noOfHours": "no data available",
+          "noOfDays": "no data available",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    }
+  ],
+  "discovered_urls": [
+    "https://www.ldvacademy.com",
+    "https://ldvacademy.com/mommy-and-me-steam-classes",
+    "https://ldvacademy.com/schedule-a-tour",
+    "https://www.ldvacademy.com/schedule-a-tour",
+    "https://ldvacademy.com/preschool/back-up-child-care",
+    "https://ldvacademy.com/2026/04/08/the-benefits-of-music-in-early-childhood",
+    "https://ldvacademy.com/2026/04/08/cooking-in-the-classroom-the-science-behind-our-favorite-preschool-pillar",
+    "https://ldvacademy.com",
+    "https://ldvacademy.com/f",
+    "https://ldvacademy.com/blog",
+    "https://www.ldvacademy.com/f",
+    "https://ldvacademy.com/about-us",
+    "https://ldvacademy.com/aftercare",
+    "https://ldvacademy.com/contact-us",
+    "https://ldvacademy.com/enrollment",
+    "https://www.ldvacademy.com/contact-us",
+    "https://ldvacademy.com/preschool/enrichment",
+    "https://ldvacademy.com/preschool/curriculum",
+    "https://ldvacademy.com/preschool/extended-care",
+    "https://ldvacademy.com/2026/03/20/why-steam-learning-is-so-powerful-in-preschool",
+    "https://ldvacademy.com/2024/09/30/outdoor-education-and-adventures-for-our-preschoolers",
+    "https://ldvacademy.com/2024/09/30/learning-spanish-french-and-mandarin-in-our-preschool",
+    "https://ldvacademy.com/2024/09/30/nurturing-little-hearts-and-minds-in-leonardo-preschool",
+    "https://ldvacademy.com/2024/09/30/exciting-steam-adventures-for-our-favorite-preschoolers",
+    "https://ldvacademy.com/2026/03/20/how-to-choose-the-right-preschool-in-montclair-bloomfield",
+    "https://www.ldvacademy.com/2024/09/30/learning-spanish-french-and-mandarin-in-our-preschool",
+    "https://www.ldvacademy.com/2024/09/30/outdoor-education-and-adventures-for-our-preschoolers",
+    "https://www.ldvacademy.com/2024/09/30/exciting-steam-adventures-for-our-favorite-preschoolers",
+    "https://ldvacademy.com/2024/09/30/bilingual-brilliance-learning-spanish-or-french-in-our-preschool",
+    "https://ldvacademy.com/2024/09/30/unleashing-the-power-of-steam-exciting-adventures-in-our-preschool",
+    "https://ldvacademy.com/2024/09/30/embrace-the-wonder-of-nature-outdoor-education-adventures-for-preschoolers"
+  ]
+}

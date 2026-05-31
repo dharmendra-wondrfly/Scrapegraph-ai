@@ -1,0 +1,245 @@
+{
+  "programs": [
+    {
+      "name": "Creative Curriculum for Infants",
+      "description": "Our infant rooms are warm, cozy, and homelike to help children feel comfortable and secure. Caregivers meet infants’ needs consistently, promptly, and lovingly in response to each child’s individual daily schedule. Our caregivers encourage infants to use their senses and their rapidly growing physical and cognitive skills to explore their surrounding environment.",
+      "ageGroup": {
+        "minAge": "0",
+        "maxAge": "1"
+      },
+      "activityRecurring": {
+        "days": [],
+        "activityRecurring": false
+      },
+      "time": {
+        "from_": "7:00 AM",
+        "to": "6:00 PM"
+      },
+      "schedule": {
+        "day": "Monday-Friday",
+        "startTime": "7:00 AM",
+        "endTime": "6:00 PM",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no data available",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In person",
+      "joiningLink": "https://www.buzzingbeesacademy.com/curriculum",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per week",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "no data available",
+          "pricePerHour": "no data available",
+          "classDuration": "no data available",
+          "halfOrFullDay": "Full Day",
+          "duration": "1 week",
+          "title": "Infants Program",
+          "noOfHours": "11",
+          "noOfDays": "5",
+          "noOfWeeks": "1"
+        }
+      ]
+    },
+    {
+      "name": "Creative Curriculum for Toddlers",
+      "description": "Our Toddler curriculum provides a nurturing environment that will encourage exploration of the world around them while enhancing cognitive development. We introduce age-appropriate activities that foster independence, vocabulary building, and social skill-building.",
+      "ageGroup": {
+        "minAge": "1",
+        "maxAge": "3"
+      },
+      "activityRecurring": {
+        "days": [],
+        "activityRecurring": false
+      },
+      "time": {
+        "from_": "7:00 AM",
+        "to": "6:00 PM"
+      },
+      "schedule": {
+        "day": "Monday-Friday",
+        "startTime": "7:00 AM",
+        "endTime": "6:00 PM",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no data available",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In person",
+      "joiningLink": "https://www.buzzingbeesacademy.com/curriculum",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per week",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "no data available",
+          "pricePerHour": "no data available",
+          "classDuration": "no data available",
+          "halfOrFullDay": "Full Day",
+          "duration": "1 week",
+          "title": "Toddlers Program",
+          "noOfHours": "11",
+          "noOfDays": "5",
+          "noOfWeeks": "1"
+        }
+      ]
+    },
+    {
+      "name": "Creative Curriculum for Preschool",
+      "description": "The Creative Curriculum for Preschool uses exploration and discovery as a way of learning. It provides developmentally appropriate experiences for children and promotes cognitive, language, physical, and social-emotional development.",
+      "ageGroup": {
+        "minAge": "3",
+        "maxAge": "5"
+      },
+      "activityRecurring": {
+        "days": [],
+        "activityRecurring": false
+      },
+      "time": {
+        "from_": "7:00 AM",
+        "to": "6:00 PM"
+      },
+      "schedule": {
+        "day": "Monday-Friday",
+        "startTime": "7:00 AM",
+        "endTime": "6:00 PM",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "7:00 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no data available",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In person",
+      "joiningLink": "https://www.buzzingbeesacademy.com/curriculum",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per week",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "no data available",
+          "pricePerHour": "no data available",
+          "classDuration": "no data available",
+          "halfOrFullDay": "Full Day",
+          "duration": "1 week",
+          "title": "Preschool Program",
+          "noOfHours": "11",
+          "noOfDays": "5",
+          "noOfWeeks": "1"
+        }
+      ]
+    }
+  ],
+  "discovered_urls": [
+    "https://www.buzzingbeesacademy.com",
+    "https://www.buzzingbeesacademy.com/contact",
+    "https://www.buzzingbeesacademy.com/about-us",
+    "https://www.buzzingbeesacademy.com/curriculum",
+    "https://www.buzzingbeesacademy.com/parent-s-corner"
+  ]
+}

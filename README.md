@@ -10,14 +10,13 @@
   </a>
 </p>
 
-[English](README.md) | [中文](docs/chinese.md) | [日本語](docs/japanese.md)
-| [한국어](docs/korean.md)
-| [Русский](docs/russian.md) | [Türkçe](docs/turkish.md)
-| [Deutsch](docs/german.md)
-| [Español](docs/spanish.md)
-| [français](docs/french.md)
-| [Português](docs/portuguese.md)
-| [Italiano](docs/italian.md)
+[English](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/README.md) | [中文](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/chinese.md) | [日本語](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/japanese.md)
+| [한국어](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/korean.md)
+| [Русский](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/russian.md) | [Türkçe](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/turkish.md)
+| [Deutsch](https://www.readme-i18n.com/ScrapeGraphAI/Scrapegraph-ai?lang=de)
+| [Español](https://www.readme-i18n.com/ScrapeGraphAI/Scrapegraph-ai?lang=es)
+| [français](https://www.readme-i18n.com/ScrapeGraphAI/Scrapegraph-ai?lang=fr)
+| [Português](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/portuguese.md)
 
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/scrapegraphai?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/scrapegraphai)
 
@@ -25,7 +24,7 @@
 [![](https://dcbadge.vercel.app/api/server/gkxQDAjfeX)](https://discord.gg/gkxQDAjfeX)
 
 <p align="center">
-<a href="https://trendshift.io/repositories/15078" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15078" alt="ScrapeGraphAI%2FScrapegraph-ai | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<a href="https://trendshift.io/repositories/9761" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9761" alt="VinciGit00%2FScrapegraph-ai | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 <p align="center">
 
 [ScrapeGraphAI](https://scrapegraphai.com) is a *web scraping* python library that uses LLM and direct graph logic to create scraping pipelines for websites and local documents (XML, HTML, JSON, Markdown, etc.).
@@ -34,10 +33,6 @@ Just say which information you want to extract and the library will do it for yo
 
 ## 🚀 Integrations
 ScrapeGraphAI offers seamless integration with popular frameworks and tools to enhance your scraping capabilities. Whether you're building with Python or Node.js, using LLM frameworks, or working with no-code platforms, we've got you covered with our comprehensive integration options..
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ScrapeGraphAI/Scrapegraph-ai/main/docs/assets/sgai-hero.png" alt="ScrapeGraphAI Hero" style="width: 100%;">
-</p>
 
 You can find more informations at the following [link](https://scrapegraphai.com)
 
@@ -167,7 +162,7 @@ The documentation for ScrapeGraphAI can be found [here](https://docs.scrapegraph
 
 Feel free to contribute and join our Discord server to discuss with us improvements and give us suggestions!
 
-Please see the [contributing guidelines](https://github.com/ScrapeGraphAI/Scrapegraph-ai/blob/main/CONTRIBUTING.md).
+Please see the [contributing guidelines](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/CONTRIBUTING.md).
 
 [![My Skills](https://skillicons.dev/icons?i=discord)](https://discord.gg/uJN7TYcpNa)
 [![My Skills](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/company/scrapegraphai/)
@@ -182,8 +177,8 @@ We offer SDKs in both Python and Node.js, making it easy to integrate into your 
 
 | SDK       | Language | GitHub Link                                                                 |
 |-----------|----------|-----------------------------------------------------------------------------|
-| Python SDK | Python   | [scrapegraph-py](https://docs.scrapegraphai.com/sdks/python) |
-| Node.js SDK | Node.js  | [scrapegraph-js](https://docs.scrapegraphai.com/sdks/javascript) |
+| Python SDK | Python   | [scrapegraph-py](https://github.com/ScrapeGraphAI/scrapegraph-sdk/tree/main/scrapegraph-py) |
+| Node.js SDK | Node.js  | [scrapegraph-js](https://github.com/ScrapeGraphAI/scrapegraph-sdk/tree/main/scrapegraph-js) |
 
 The Official API Documentation can be found [here](https://docs.scrapegraphai.com/introduction).
 
@@ -191,7 +186,7 @@ The Official API Documentation can be found [here](https://docs.scrapegraphai.co
 We collect anonymous usage metrics to enhance our package's quality and user experience. The data helps us prioritize improvements and ensure compatibility. If you wish to opt-out, set the environment variable SCRAPEGRAPHAI_TELEMETRY_ENABLED=false. For more information, please refer to the documentation [here](https://docs.scrapegraphai.com/introduction).
 
 ## ❤️ Contributors
-[![Contributors](https://contrib.rocks/image?repo=ScrapeGraphAI/Scrapegraph-ai)](https://github.com/ScrapeGraphAI/Scrapegraph-ai/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=VinciGit00/Scrapegraph-ai)](https://github.com/VinciGit00/Scrapegraph-ai/graphs/contributors)
 
 ## 🎓 Citations
 If you have used our library for research purposes please quote us with the following reference:
@@ -200,7 +195,7 @@ If you have used our library for research purposes please quote us with the foll
     author = {Lorenzo Padoan, Marco Vinciguerra},
     title = {Scrapegraph-ai},
     year = {2024},
-    url = {https://github.com/ScrapeGraphAI/Scrapegraph-ai},
+    url = {https://github.com/VinciGit00/Scrapegraph-ai},
     note = {A Python library for scraping leveraging large language models}
   }
 ```
@@ -213,7 +208,7 @@ If you have used our library for research purposes please quote us with the foll
 
 ## 📜 License
 
-ScrapeGraphAI is licensed under the MIT License. See the [LICENSE](https://github.com/ScrapeGraphAI/Scrapegraph-ai/blob/main/LICENSE) file for more information.
+ScrapeGraphAI is licensed under the MIT License. See the [LICENSE](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/LICENSE) file for more information.
 
 ## Acknowledgements
 

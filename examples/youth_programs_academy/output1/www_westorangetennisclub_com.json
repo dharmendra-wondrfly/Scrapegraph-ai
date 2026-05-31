@@ -1,0 +1,34 @@
+{
+  "programs": [
+    {
+      "name": "Junior Tennis Summer Camp (ROGY)",
+      "minAge": 5,
+      "maxAge": 12,
+      "schedules": [],
+      "prices": [
+        {
+          "priceType": "Camps",
+          "duration": "no data available",
+          "pricingData": "Price can be discussed"
+        }
+      ],
+      "type": "camps",
+      "joiningLink": "no data available"
+    },
+    {
+      "name": "Yoga for Junior Tennis Camp Players",
+      "minAge": 5,
+      "maxAge": 12,
+      "schedules": [],
+      "prices": [
+        {
+          "priceType": "Camps",
+          "duration": "no data available",
+          "pricingData": "Price can be discussed"
+        }
+      ],
+      "type": "camps",
+      "joiningLink": "no data available"
+    }
+  ]
+}

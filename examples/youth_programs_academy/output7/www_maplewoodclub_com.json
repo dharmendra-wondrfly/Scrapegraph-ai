@@ -1,0 +1,98 @@
+{
+  "programs": [
+    {
+      "name": "MLC Summer Camp",
+      "description": "The Maplewood Club's weekly summer camp will run June 22–August 20, 2026. Full and half day programs are available for kids ages 5-16, and all tennis abilities (beginner through advanced).",
+      "ageGroup": {
+        "minAge": "5",
+        "maxAge": "16"
+      },
+      "activityRecurring": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "09:00",
+        "to": "14:00"
+      },
+      "schedule": {
+        "day": "Monday - Thursday",
+        "startTime": "09:00",
+        "endTime": "14:00",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday - Thursday",
+          "startTime": "09:00",
+          "endTime": "14:00",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "30",
+      "parentalSupervisionRequired": "yes",
+      "indoorOroutdoor": "outdoor",
+      "inpersonOrVirtual": "inperson",
+      "joiningLink": "https://form.jotform.com/253624263726964",
+      "type": "camps",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per session",
+          "priceType": "Single class",
+          "pricePerParticipant": "225",
+          "pricePerHour": "NA",
+          "classDuration": "3 hours",
+          "halfOrFullDay": "Half Day Session",
+          "duration": "1 session",
+          "title": "Half Day Session",
+          "noOfHours": "3",
+          "noOfDays": "1",
+          "noOfWeeks": "NA"
+        },
+        {
+          "priceUnit": "per session",
+          "priceType": "Single class",
+          "pricePerParticipant": "325",
+          "pricePerHour": "NA",
+          "classDuration": "5 hours",
+          "halfOrFullDay": "Full Day Session",
+          "duration": "1 session",
+          "title": "Full Day Session",
+          "noOfHours": "5",
+          "noOfDays": "1",
+          "noOfWeeks": "NA"
+        }
+      ]
+    }
+  ],
+  "discovered_urls": [
+    "http://www.maplewoodclub.com",
+    "https://www.maplewoodclub.com/summer-camp",
+    "https://www.maplewoodclub.com/tennis-cams",
+    "https://www.maplewoodclub.com/home",
+    "https://www.maplewoodclub.com/proshop",
+    "https://www.maplewoodclub.com/contact",
+    "https://www.maplewoodclub.com/coach-tom",
+    "https://www.maplewoodclub.com/club-rules",
+    "https://www.maplewoodclub.com/club-history",
+    "https://www.maplewoodclub.com/annual-report",
+    "https://www.maplewoodclub.com/social-events",
+    "https://www.maplewoodclub.com/club-calendar",
+    "https://www.maplewoodclub.com/member-sign-in",
+    "https://www.maplewoodclub.com/membership-info",
+    "https://www.maplewoodclub.com/member-directory",
+    "https://www.maplewoodclub.com/clubhouse-rental",
+    "https://www.maplewoodclub.com/court-reservations",
+    "https://www.maplewoodclub.com/mlc-board-trustees",
+    "https://www.maplewoodclub.com/club-championships",
+    "https://www.maplewoodclub.com/diversity-and-inclusion-statement"
+  ]
+}

@@ -4,36 +4,39 @@
 
 # 🕷️ ScrapeGraphAI: 한 방에 끝내는 웹스크래핑
 
-[English](../README.md) | [中文](chinese.md) | [日本語](japanese.md)
-| [한국어](korean.md)
-| [Русский](russian.md) | [Türkçe](turkish.md)
-| [Deutsch](german.md)
-| [Español](spanish.md)
-| [français](french.md)
-| [Português](portuguese.md)
-| [Italiano](italian.md)
+[English](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/README.md) | [中文](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/chinese.md) | [日本語](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/japanese.md)
+| [한국어](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/korean.md)
+| [Русский](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/russian.md) | [Türkçe](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/turkish.md)
+| [Deutsch](https://www.readme-i18n.com/ScrapeGraphAI/Scrapegraph-ai?lang=de)
+| [Español](https://www.readme-i18n.com/ScrapeGraphAI/Scrapegraph-ai?lang=es)
+| [français](https://www.readme-i18n.com/ScrapeGraphAI/Scrapegraph-ai?lang=fr)
+| [Português](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/docs/portuguese.md)
 
 [![PyPI Downloads](https://static.pepy.tech/personalized-badge/scrapegraphai?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/scrapegraphai)
-
+[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen?style=for-the-badge)](https://github.com/pylint-dev/pylint)
+[![Pylint](https://img.shields.io/github/actions/workflow/status/VinciGit00/Scrapegraph-ai/code-quality.yml?label=Pylint&logo=github&style=for-the-badge)](https://github.com/VinciGit00/Scrapegraph-ai/actions/workflows/code-quality.yml)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/VinciGit00/Scrapegraph-ai/codeql.yml?label=CodeQL&logo=github&style=for-the-badge)](https://github.com/VinciGit00/Scrapegraph-ai/actions/workflows/codeql.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![](https://dcbadge.vercel.app/api/server/gkxQDAjfeX)](https://discord.gg/gkxQDAjfeX)
+
+[![API Banner](https://raw.githubusercontent.com/ScrapeGraphAI/Scrapegraph-ai/main/docs/assets/api_banner.png)](https://scrapegraphai.com/?utm_source=github&utm_medium=readme&utm_campaign=api_banner&utm_content=api_banner_image)
+
 <p align="center">
-<a href="https://trendshift.io/repositories/15078" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15078" alt="ScrapeGraphAI%2FScrapegraph-ai | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+<a href="https://trendshift.io/repositories/9761" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9761" alt="VinciGit00%2FScrapegraph-ai | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 <p align="center">
 
 [ScrapeGraphAI](https://scrapegraphai.com)는 웹 사이트와 로컬 문서(XML, HTML, JSON, Markdown 등)에 대한 스크래핑 파이프라인을 만들기 위해 LLM 및 직접 그래프 로직을 사용하는 파이썬 웹스크래핑 라이브러리입니다.
 
 추출하려는 정보를 말하기만 하면 라이브러리가 알아서 처리해 줍니다!
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/VinciGit00/Scrapegraph-ai/main/docs/assets/sgai-hero.png" alt="ScrapeGraphAI Hero" style="width: 100%;">
+</p>
 
 
 ## 🚀 통합
-
 ScrapeGraphAI는 인기 있는 프레임워크 및 도구와의 원활한 통합을 제공하여 스크래핑 능력을 향상시킵니다. 파이썬이든 Node.js로 개발하든, LLM 프레임워크를 사용하든, 노코드 플랫폼이든 저희의 포괄적인 통합 옵션을 제공합니다.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ScrapeGraphAI/Scrapegraph-ai/main/docs/assets/sgai-hero.png" alt="ScrapeGraphAI Hero" style="width: 100%;">
-</p>
 더 많은 정보는 다음 [링크](https://scrapegraphai.com)에서 확인할 수 있습니다
 
 **통합**:
@@ -162,7 +165,7 @@ ScrapeGraphAI 관련 문서는 [여기](https://docs.scrapegraphai.com/introduct
 
 자유롭게 기여하고 Discord 서버에 참여하여 개선 사항을 논의하고 제안해 주세요!
 
-[기여 가이드라인](https://github.com/ScrapeGraphAI/Scrapegraph-ai/blob/main/CONTRIBUTING.md)을 참고하세요.
+[기여 가이드라인](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/CONTRIBUTING.md)을 참고하세요.
 
 [![My Skills](https://skillicons.dev/icons?i=discord)](https://discord.gg/uJN7TYcpNa)
 [![My Skills](https://skillicons.dev/icons?i=linkedin)](https://www.linkedin.com/company/scrapegraphai/)
@@ -177,14 +180,14 @@ Python과 Node.js SDK를 제공하여 프로젝트에 쉽게 통합할 수 있�
 
 | SDK       | 언어 | GitHub 링크                                                                 |
 |-----------|----------|-----------------------------------------------------------------------------|
-| Python SDK | Python   | [scrapegraph-py](https://docs.scrapegraphai.com/sdks/python) |
-| Node.js SDK | Node.js  | [scrapegraph-js](https://docs.scrapegraphai.com/sdks/javascript) |
+| Python SDK | Python   | [scrapegraph-py](https://github.com/ScrapeGraphAI/scrapegraph-sdk/tree/main/scrapegraph-py) |
+| Node.js SDK | Node.js  | [scrapegraph-js](https://github.com/ScrapeGraphAI/scrapegraph-sdk/tree/main/scrapegraph-js) |
 
 공식 API 문서는 [여기](https://docs.scrapegraphai.com/introduction)에서 확인할 수 있습니다.
 
 ## 🔥 벤치마크
 
-Firecrawl 벤치마크 [Firecrawl benchmark](https://scrapegraphai.com/compare/firecrawl)에 따르면, ScrapeGraph는 시장에서 최고의 페처입니다!
+Firecrawl 벤치마크 [Firecrawl benchmark](https://github.com/firecrawl/scrape-evals/pull/3)에 따르면, ScrapeGraph는 시장에서 최고의 페처입니다!
 
 ![here](assets/histogram.png)
 
@@ -192,7 +195,7 @@ Firecrawl 벤치마크 [Firecrawl benchmark](https://scrapegraphai.com/compare/f
 저희는 패키지의 품질과 사용자 경험을 향상시키기 위해 익명의 사용 지표를 수집합니다. 이 데이터는 개선 사항의 우선순위를 정하고 호환성을 보장하는 데 도움이 됩니다. 옵트아웃하려면 환경 변수 SCRAPEGRAPHAI_TELEMETRY_ENABLED=false를 설정하세요. 자세한 내용은 [여기](https://docs.scrapegraphai.com/introduction)에서 설명서를 참조하세요.
 
 ## ❤️ 기여자들
-[![Contributors](https://contrib.rocks/image?repo=ScrapeGraphAI/Scrapegraph-ai)](https://github.com/ScrapeGraphAI/Scrapegraph-ai/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=VinciGit00/Scrapegraph-ai)](https://github.com/VinciGit00/Scrapegraph-ai/graphs/contributors)
 
 ## 🎓 인용
 우리의 라이브러리를 연구 목적으로 사용한 경우 다음과 같이 인용해 주세요:
@@ -201,7 +204,7 @@ Firecrawl 벤치마크 [Firecrawl benchmark](https://scrapegraphai.com/compare/f
     author = {Lorenzo Padoan, Marco Vinciguerra},
     title = {Scrapegraph-ai},
     year = {2024},
-    url = {https://github.com/ScrapeGraphAI/Scrapegraph-ai},
+    url = {https://github.com/VinciGit00/Scrapegraph-ai},
     note = {대규모 언어 모델을 활용한 스크래핑용 Python 라이브러리}
   }
 ```
@@ -215,7 +218,7 @@ Firecrawl 벤치마크 [Firecrawl benchmark](https://scrapegraphai.com/compare/f
 
 ## 📜 라이선스
 
-ScrapeGraphAI는 MIT License로 배포되었습니다. 자세한 내용은 [LICENSE](https://github.com/ScrapeGraphAI/Scrapegraph-ai/blob/main/LICENSE) 파일을 참조하세요.
+ScrapeGraphAI는 MIT License로 배포되었습니다. 자세한 내용은 [LICENSE](https://github.com/VinciGit00/Scrapegraph-ai/blob/main/LICENSE) 파일을 참조하세요.
 
 ## 감사의 말
 

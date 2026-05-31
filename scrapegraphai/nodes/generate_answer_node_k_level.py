@@ -35,6 +35,10 @@ class GenerateAnswerNodeKLevel(BaseNode):
 
     It allows scraping of big documents without exceeding the token limit of the language model.
 
+    Node config ``rag_score_threshold`` (default 0.5): minimum similarity score for a retrieved
+    chunk to be passed to the LLM. Lower values increase recall (more chunks, possibly noisier);
+    higher values improve precision (fewer chunks).
+
     Attributes:
         llm_model: An instance of a language model client, configured for generating answers.
         verbose (bool): A flag indicating whether to show print statements during execution.
@@ -69,6 +73,7 @@ class GenerateAnswerNodeKLevel(BaseNode):
         self.script_creator = node_config.get("script_creator", False)
         self.is_md_scraper = node_config.get("is_md_scraper", False)
         self.additional_info = node_config.get("additional_info")
+        self.rag_score_threshold = float(node_config.get("rag_score_threshold", 0.5))
 
     def execute(self, state: dict) -> dict:
         self.logger.info(f"--- Executing {self.node_name} Node ---")
@@ -141,7 +146,9 @@ class GenerateAnswerNodeKLevel(BaseNode):
 
         chains_dict = {}
         elems = [
-            state.get("docs")[elem.id - 1] for elem in answer_db if elem.score > 0.5
+            state.get("docs")[elem.id - 1]
+            for elem in answer_db
+            if elem.score > self.rag_score_threshold
         ]
 
         for i, chunk in enumerate(

@@ -119,6 +119,8 @@ class DepthSearchGraph(AbstractGraph):
                 "llm_model": self.llm_model,
                 "embedder_model": self.config.get("embedder_model", False),
                 "verbose": self.config.get("verbose", False),
+                "schema": self.schema,
+                "rag_score_threshold": self.config.get("rag_score_threshold", 0.5),
             },
         )
 

@@ -1,0 +1,250 @@
+{
+  "programs": [
+    {
+      "name": "Junior (ROGY) Clinics",
+      "description": "Junior (ROGY) Clinics designed to improve tennis skills in a fun and engaging environment.",
+      "ageGroup": {
+        "minAge": "5",
+        "maxAge": "12"
+      },
+      "activityRecurring": {
+        "days": [
+          "Monday",
+          "Wednesday",
+          "Friday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "16:00",
+        "to": "18:00"
+      },
+      "schedule": {
+        "day": "Monday",
+        "startTime": "16:00",
+        "endTime": "18:00",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "16:00",
+          "endTime": "18:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "16:00",
+          "endTime": "18:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "16:00",
+          "endTime": "18:00",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "20",
+      "parentalSupervisionRequired": "yes",
+      "indoorOroutdoor": "indoor",
+      "inpersonOrVirtual": "in person",
+      "joiningLink": "http://www.westorangetennisclub.com/rogy-program-winter-season-wotc",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per session",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "20",
+          "pricePerHour": "15",
+          "classDuration": "1.5 hours",
+          "halfOrFullDay": "Half Day",
+          "duration": "no data available",
+          "title": "Junior Clinic Pricing",
+          "noOfHours": "1.5",
+          "noOfDays": "1",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    },
+    {
+      "name": "High Performance Clinics",
+      "description": "Intensive clinics for aspiring young athletes to enhance their performance skills.",
+      "ageGroup": {
+        "minAge": "11",
+        "maxAge": "17"
+      },
+      "activityRecurring": {
+        "days": [
+          "Tuesday",
+          "Thursday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "17:00",
+        "to": "19:00"
+      },
+      "schedule": {
+        "day": "Tuesday",
+        "startTime": "17:00",
+        "endTime": "19:00",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Tuesday",
+          "startTime": "17:00",
+          "endTime": "19:00",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "17:00",
+          "endTime": "19:00",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "8",
+      "parentalSupervisionRequired": "No",
+      "indoorOroutdoor": "indoor",
+      "inpersonOrVirtual": "in person",
+      "joiningLink": "http://www.westorangetennisclub.com/high-performance-program-winter-season-wotc",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per session",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "30",
+          "pricePerHour": "20",
+          "classDuration": "2 hours",
+          "halfOrFullDay": "Half Day",
+          "duration": "no data available",
+          "title": "High Performance Clinic Pricing",
+          "noOfHours": "2",
+          "noOfDays": "1",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    },
+    {
+      "name": "Junior (ROGY) Camp",
+      "description": "A summer camp for junior players to enhance their tennis skills in a fun and engaging environment.",
+      "ageGroup": {
+        "minAge": "5",
+        "maxAge": "12"
+      },
+      "activityRecurring": {
+        "days": [],
+        "activityRecurring": false
+      },
+      "time": {
+        "from_": "09:00",
+        "to": "15:00"
+      },
+      "schedule": {
+        "day": "Monday to Friday",
+        "startTime": "09:00",
+        "endTime": "15:00",
+        "frequency": "Daily"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "09:00",
+          "endTime": "15:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "09:00",
+          "endTime": "15:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "09:00",
+          "endTime": "15:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "09:00",
+          "endTime": "15:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Friday",
+          "startTime": "09:00",
+          "endTime": "15:00",
+          "frequency": "Daily"
+        }
+      ],
+      "offerDiscount": "Contact for pricing",
+      "maxNumberOfStudents": "20",
+      "parentalSupervisionRequired": "yes",
+      "indoorOroutdoor": "outdoor",
+      "inpersonOrVirtual": "in person",
+      "joiningLink": "http://www.westorangetennisclub.com/rogy-camp-summer-wotc",
+      "type": "camps",
+      "pricingData": "Price can be discussed",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per week",
+          "priceType": "Camps",
+          "pricePerParticipant": "200",
+          "pricePerHour": "no data available",
+          "classDuration": "6 hours",
+          "halfOrFullDay": "Full day",
+          "duration": "1 week",
+          "title": "Junior Camp Fee",
+          "noOfHours": "8",
+          "noOfDays": "5",
+          "noOfWeeks": "1"
+        }
+      ]
+    }
+  ],
+  "discovered_urls": [
+    "http://www.westorangetennisclub.com",
+    "http://www.westorangetennisclub.com/rogy-camp-summer-wotc",
+    "http://www.westorangetennisclub.com/rogy-program-winter-season-wotc",
+    "http://www.westorangetennisclub.com/high-performance-camp-summer-wotc",
+    "http://www.westorangetennisclub.com/high-performance-program-winter-season-wotc",
+    "http://www.westorangetennisclub.com/https/wwwcatchcornercom/facility-page/embedded/rental/west-orange-tennis-club",
+    "http://www.westorangetennisclub.com/faq",
+    "http://www.westorangetennisclub.com/who",
+    "http://www.westorangetennisclub.com/cart",
+    "http://www.westorangetennisclub.com/faqs",
+    "http://www.westorangetennisclub.com/about",
+    "http://www.westorangetennisclub.com/search",
+    "http://www.westorangetennisclub.com/contact",
+    "http://www.westorangetennisclub.com/players",
+    "http://www.westorangetennisclub.com/community",
+    "http://www.westorangetennisclub.com/new-page-1",
+    "http://www.westorangetennisclub.com/leadership",
+    "http://www.westorangetennisclub.com/new-page-2",
+    "http://www.westorangetennisclub.com/new-page-3",
+    "http://www.westorangetennisclub.com/wotc-alumni",
+    "http://www.westorangetennisclub.com/site-search",
+    "http://www.westorangetennisclub.com/leadership-1",
+    "http://www.westorangetennisclub.com/winter-season",
+    "http://www.westorangetennisclub.com/summer-season",
+    "http://www.westorangetennisclub.com/privacy-policy",
+    "http://www.westorangetennisclub.com/book-open-court",
+    "http://www.westorangetennisclub.com/player-spotlight",
+    "http://www.westorangetennisclub.com/hours-of-operation",
+    "http://www.westorangetennisclub.com/terms-and-conditions",
+    "http://www.westorangetennisclub.com/events-and-affiliations",
+    "http://www.westorangetennisclub.com/memberships-summer-season-wotc",
+    "http://www.westorangetennisclub.com/winter-season-memberships-wotc",
+    "http://www.westorangetennisclub.com/contract-time-wotc-winter-season"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "programs": [
+    {
+      "name": "Preschool Program",
+      "description": "A comprehensive program for children ages 2.5 to 6 years, focusing on language, reading, and math skills through explorative learning.",
+      "ageGroup": {
+        "minAge": "3",
+        "maxAge": "6"
+      },
+      "activityRecurring": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "08:30",
+        "to": "14:30"
+      },
+      "schedule": {
+        "day": "Monday",
+        "startTime": "08:30",
+        "endTime": "14:30",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "08:30",
+          "endTime": "14:30",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "08:30",
+          "endTime": "14:30",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "08:30",
+          "endTime": "14:30",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "08:30",
+          "endTime": "14:30",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "08:30",
+          "endTime": "14:30",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In-person",
+      "joiningLink": "https://www.buzzingbeesacademy.com/preschool",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per week",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "100",
+          "pricePerHour": "25",
+          "classDuration": "1 week",
+          "halfOrFullDay": "Full Day",
+          "duration": "1 week",
+          "title": "Weekly Fee",
+          "noOfHours": "30",
+          "noOfDays": "5",
+          "noOfWeeks": "1"
+        }
+      ]
+    }
+  ],
+  "discovered_urls": [
+    "https://www.buzzingbeesacademy.com",
+    "https://www.buzzingbeesacademy.com/contact",
+    "https://www.buzzingbeesacademy.com/about-us",
+    "https://www.buzzingbeesacademy.com/curriculum",
+    "https://www.buzzingbeesacademy.com/parent-s-corner"
+  ]
+}

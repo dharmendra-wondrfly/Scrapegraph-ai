@@ -1,0 +1,307 @@
+{
+  "programs": [
+    {
+      "name": "Mommy & Me STEAM",
+      "description": "An engaging program that allows mothers to participate alongside their children in fun STEAM activities.",
+      "ageGroup": {
+        "minAge": "1",
+        "maxAge": "5"
+      },
+      "activityRecurring": {
+        "days": [],
+        "activityRecurring": false
+      },
+      "time": {
+        "from_": "07:30",
+        "to": "18:00"
+      },
+      "schedule": {
+        "day": "Monday",
+        "startTime": "07:30",
+        "endTime": "18:00",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "07:30",
+          "endTime": "18:00",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no",
+      "indoorOroutdoor": "indoor",
+      "inpersonOrVirtual": "in person",
+      "joiningLink": "https://ldvacademy.com/mommy-and-me-steam-classes/",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per session",
+          "priceType": "Single class",
+          "pricePerParticipant": "30",
+          "pricePerHour": "30",
+          "classDuration": "1 hour",
+          "halfOrFullDay": "half",
+          "duration": "1 hour",
+          "title": "Mommy & Me STEAM Class",
+          "noOfHours": "1",
+          "noOfDays": "1",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    },
+    {
+      "name": "Cooking in the Classroom",
+      "description": "A hands-on cooking program that engages children in multiple developmental domains, enhancing their math, science, language, and fine motor skills.",
+      "ageGroup": {
+        "minAge": "3",
+        "maxAge": "5"
+      },
+      "activityRecurring": {
+        "days": [],
+        "activityRecurring": false
+      },
+      "time": {
+        "from_": "7:30 AM",
+        "to": "6:00 PM"
+      },
+      "schedule": {
+        "day": "Monday to Friday",
+        "startTime": "7:30 AM",
+        "endTime": "6:00 PM",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "7:30 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "7:30 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "7:30 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "7:30 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        },
+        {
+          "day": "Friday",
+          "startTime": "7:30 AM",
+          "endTime": "6:00 PM",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "no data available",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In-person",
+      "joiningLink": "https://ldvacademy.com/cooking-in-the-classroom/",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per session",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "Contact for pricing",
+          "pricePerHour": "no data available",
+          "classDuration": "3 hours",
+          "halfOrFullDay": "Full Day",
+          "duration": "Weekly",
+          "title": "Cooking Class Pricing",
+          "noOfHours": "3",
+          "noOfDays": "5",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    },
+    {
+      "name": "STEM Classes",
+      "description": "An interactive program focusing on Science, Technology, Engineering, and Mathematics to inspire young innovators.",
+      "ageGroup": {
+        "minAge": "5",
+        "maxAge": "12"
+      },
+      "activityRecurring": {
+        "days": [],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "14:00",
+        "to": "15:30"
+      },
+      "schedule": {
+        "day": "Wednesday",
+        "startTime": "14:00",
+        "endTime": "15:30",
+        "frequency": "Weekly"
+      },
+      "schedules": [
+        {
+          "day": "Wednesday",
+          "startTime": "14:00",
+          "endTime": "15:30",
+          "frequency": "Weekly"
+        }
+      ],
+      "offerDiscount": "no data available",
+      "maxNumberOfStudents": "15",
+      "parentalSupervisionRequired": "Not required",
+      "indoorOroutdoor": "Indoor",
+      "inpersonOrVirtual": "In-person",
+      "joiningLink": "https://ldvacademy.com/stem-classes/",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per session",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "30",
+          "pricePerHour": "no data available",
+          "classDuration": "1.5 hours",
+          "halfOrFullDay": "Half day",
+          "duration": "1 session",
+          "title": "STEM Class",
+          "noOfHours": "1.5",
+          "noOfDays": "1",
+          "noOfWeeks": "no data available"
+        }
+      ]
+    },
+    {
+      "name": "Aftercare",
+      "description": "A supportive program that helps children after regular school hours, providing activities and care.",
+      "ageGroup": {
+        "minAge": "3",
+        "maxAge": "5"
+      },
+      "activityRecurring": {
+        "days": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "activityRecurring": true
+      },
+      "time": {
+        "from_": "15:00",
+        "to": "18:00"
+      },
+      "schedule": {
+        "day": "Monday to Friday",
+        "startTime": "15:00",
+        "endTime": "18:00",
+        "frequency": "Daily"
+      },
+      "schedules": [
+        {
+          "day": "Monday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Tuesday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Wednesday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Thursday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        },
+        {
+          "day": "Friday",
+          "startTime": "15:00",
+          "endTime": "18:00",
+          "frequency": "Daily"
+        }
+      ],
+      "offerDiscount": "10% off for additional children",
+      "maxNumberOfStudents": "no data available",
+      "parentalSupervisionRequired": "yes",
+      "indoorOroutdoor": "indoor",
+      "inpersonOrVirtual": "in person",
+      "joiningLink": "https://ldvacademy.com/aftercare/",
+      "type": "classes",
+      "pricingData": "Price available",
+      "isFreeTrial": false,
+      "prices": [
+        {
+          "priceUnit": "per month",
+          "priceType": "Weekly / Monthly / Yearly Class Pricing",
+          "pricePerParticipant": "280",
+          "pricePerHour": "no data available",
+          "classDuration": "1 month",
+          "halfOrFullDay": "no data available",
+          "duration": "1 month",
+          "title": "Aftercare Monthly Fee",
+          "noOfHours": "15",
+          "noOfDays": "5",
+          "noOfWeeks": "4"
+        }
+      ]
+    }
+  ],
+  "discovered_urls": [
+    "https://www.ldvacademy.com",
+    "https://ldvacademy.com/mommy-and-me-steam-classes",
+    "https://ldvacademy.com/schedule-a-tour",
+    "https://www.ldvacademy.com/schedule-a-tour",
+    "https://ldvacademy.com/preschool/back-up-child-care",
+    "https://ldvacademy.com/2026/04/08/the-benefits-of-music-in-early-childhood",
+    "https://ldvacademy.com/2026/04/08/cooking-in-the-classroom-the-science-behind-our-favorite-preschool-pillar",
+    "https://ldvacademy.com",
+    "https://ldvacademy.com/f",
+    "https://ldvacademy.com/blog",
+    "https://www.ldvacademy.com/f",
+    "https://ldvacademy.com/about-us",
+    "https://ldvacademy.com/aftercare",
+    "https://ldvacademy.com/enrollment",
+    "https://ldvacademy.com/contact-us",
+    "https://www.ldvacademy.com/contact-us",
+    "https://ldvacademy.com/preschool/curriculum",
+    "https://ldvacademy.com/preschool/enrichment",
+    "https://ldvacademy.com/preschool/extended-care",
+    "https://ldvacademy.com/2026/03/20/why-steam-learning-is-so-powerful-in-preschool",
+    "https://ldvacademy.com/2024/09/30/learning-spanish-french-and-mandarin-in-our-preschool",
+    "https://ldvacademy.com/2024/09/30/outdoor-education-and-adventures-for-our-preschoolers",
+    "https://ldvacademy.com/2024/09/30/exciting-steam-adventures-for-our-favorite-preschoolers",
+    "https://ldvacademy.com/2024/09/30/nurturing-little-hearts-and-minds-in-leonardo-preschool",
+    "https://www.ldvacademy.com/2024/09/30/learning-spanish-french-and-mandarin-in-our-preschool",
+    "https://www.ldvacademy.com/2024/09/30/outdoor-education-and-adventures-for-our-preschoolers",
+    "https://ldvacademy.com/2026/03/20/how-to-choose-the-right-preschool-in-montclair-bloomfield",
+    "https://www.ldvacademy.com/2024/09/30/exciting-steam-adventures-for-our-favorite-preschoolers",
+    "https://ldvacademy.com/2024/09/30/bilingual-brilliance-learning-spanish-or-french-in-our-preschool",
+    "https://ldvacademy.com/2024/09/30/unleashing-the-power-of-steam-exciting-adventures-in-our-preschool",
+    "https://ldvacademy.com/2024/09/30/embrace-the-wonder-of-nature-outdoor-education-adventures-for-preschoolers"
+  ]
+}
