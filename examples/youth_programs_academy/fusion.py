@@ -16,6 +16,7 @@ import re
 from typing import Any
 
 __all__ = [
+    "drop_category_and_stub_programs",
     "fuse_programs",
     "fuse_provider_profiles",
     "normalize_programs_payload",
@@ -25,6 +26,36 @@ __all__ = [
 
 
 _EMPTY_STRINGS = {"", "no data available", "not specified"}
+
+# Generic/umbrella names that are NOT a real bookable program on their own.
+# A row whose name normalizes to one of these (or is built only from these tokens)
+# AND carries no concrete data (age/schedule/price) is a category card, not a program.
+_GENERIC_PROGRAM_NAMES = {
+    "camp", "camps", "camps events", "camps and events", "class", "classes",
+    "gym class", "gym classes", "steam class", "steam classes", "program",
+    "programs", "care", "daycare", "day care", "childcare", "child care",
+    "after school", "after school care", "after care", "before care",
+    "before school care", "event", "events", "party", "parties", "lesson",
+    "lessons", "course", "courses", "enrichment", "activity", "activities",
+    "open gym", "schedule", "find a class", "our programs", "our classes",
+    "our camps",
+}
+
+# Tokens that, alone or combined, signal a generic name (e.g. "Gym Camps",
+# "Kids Classes"). Used to catch generic names not enumerated above.
+_GENERIC_TOKENS = {
+    "gym", "steam", "camp", "camps", "class", "classes", "program", "programs",
+    "care", "daycare", "childcare", "kids", "child", "children", "youth",
+    "party", "parties", "event", "events", "lesson", "lessons", "course",
+    "courses", "open", "general", "our",
+}
+
+# joiningLink path tails that are category/landing pages, not a specific program.
+_CATEGORY_LINK_TAILS = (
+    "/camps-and-events", "/camps", "/gym-classes", "/steam-classes",
+    "/classes", "/parties", "/schedule", "/find-a-class", "/programs",
+    "/events", "/camps-events",
+)
 
 
 def _is_empty_scalar(value: Any) -> bool:
@@ -190,6 +221,80 @@ def _fuzzy_name(name: Any) -> str:
             tokens.append(popped)
             break
     return " ".join(tokens)
+
+
+def _has_concrete_data(p: dict[str, Any]) -> bool:
+    """True if the program carries at least one real, bookable signal:
+    a numeric age, a schedule entry, or a price entry. Description/name alone
+    do NOT count — those are present even on category cards and stubs."""
+    ag = p.get("ageGroup") or {}
+    if isinstance(ag, dict) and (
+        _is_numeric_age(ag.get("minAge")) or _is_numeric_age(ag.get("maxAge"))
+    ):
+        return True
+    sched = p.get("schedules")
+    if isinstance(sched, list) and len(sched) > 0:
+        return True
+    prices = p.get("prices")
+    if isinstance(prices, list) and len(prices) > 0:
+        return True
+    return False
+
+
+def _normalized_name(name: Any) -> str:
+    return _PUNCT_RE.sub(" ", str(name or "").lower()).strip()
+
+
+def _is_generic_name(name: Any) -> bool:
+    """True if the name is an umbrella/category label ("Camps", "Gym Classes",
+    "Care", "Kids Classes") rather than a specific program ("Ninja Warrior")."""
+    norm = _normalized_name(name)
+    if not norm:
+        return True
+    if norm in _GENERIC_PROGRAM_NAMES:
+        return True
+    # Name built ENTIRELY from generic tokens (e.g. "gym camps", "kids classes").
+    tokens = norm.split()
+    if tokens and all(t in _GENERIC_TOKENS for t in tokens):
+        return True
+    return False
+
+
+def _is_category_link(p: dict[str, Any]) -> bool:
+    link = str(p.get("joiningLink") or "").strip().lower().rstrip("/")
+    if not link:
+        return False
+    return any(link.endswith(tail) for tail in _CATEGORY_LINK_TAILS)
+
+
+def drop_category_and_stub_programs(
+    programs: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Remove fake "programs" that are really category/landing cards or empty stubs.
+
+    A row is dropped when it carries NO concrete data (no numeric age, no schedule,
+    no price) AND it is either:
+      • a generic/umbrella name ("Camps", "Gym Classes", "Care", "Daycare"), or
+      • pointed at a category/landing page (joiningLink ends in /camps-and-events etc).
+
+    Rows with a specific name AND a specific detail link survive even without
+    structured data (a real program page that just didn't list age/price).
+
+    Returns ``(kept, dropped)`` so the caller can log what was removed.
+    """
+    kept: list[dict[str, Any]] = []
+    dropped: list[dict[str, Any]] = []
+    for p in programs:
+        if not isinstance(p, dict):
+            continue
+        if _has_concrete_data(p):
+            kept.append(p)
+            continue
+        if _is_generic_name(p.get("name")) or _is_category_link(p):
+            dropped.append(p)
+        else:
+            kept.append(p)
+    return kept, dropped
 
 
 def safe_parse_raw(raw: Any) -> Any:

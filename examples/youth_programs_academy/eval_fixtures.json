@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://example-childcare.com",
+    "expected_programs_min": 3,
+    "must_have_fields": [
+      "ageGroup",
+      "prices",
+      "schedules",
+      "joiningLink",
+      "description"
+    ]
+  },
+  {
+    "url": "https://example-dance-studio.com",
+    "expected_programs_min": 3,
+    "must_have_fields": [
+      "ageGroup",
+      "prices",
+      "schedules",
+      "joiningLink",
+      "description"
+    ]
+  }
+]

@@ -121,6 +121,24 @@ STRICT DATA RULES
 • Program name must be specific
 
 -----------------------------------
+LITERAL-TEXT RULE (ZERO TOLERANCE — READ TWICE)
+-----------------------------------
+For these fields you MUST copy values that literally appear in the page text.
+If the exact value is NOT physically present in the text you are reading, you
+MUST return the empty/"no data available" form. NEVER infer, guess, or invent:
+
+• schedules — only emit a day/startTime/endTime if that EXACT day and clock time
+  appear verbatim on the page. No page text with times → schedules: []
+  (Inventing plausible times like "Monday 9:00 AM" is a CRITICAL FAILURE.)
+• prices / pricePerParticipant — only emit a number that appears verbatim
+  ($, digits) on the page. No printed price → prices: [], pricingData per rules.
+• ageGroup — only from ages/grades printed on the page (after conversion rules).
+• maxNumberOfStudents, offerDiscount — only if literally stated.
+
+Self-check before output: for every schedule time and every price you emit, ask
+"can I point to those exact characters in the page text?" If no → delete it.
+
+-----------------------------------
 STRUCTURE RULES (VERY IMPORTANT)
 -----------------------------------
 • schedules MUST be an array (even if one)

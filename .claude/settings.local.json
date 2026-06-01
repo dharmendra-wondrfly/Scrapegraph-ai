@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m uvicorn api:app --host 0.0.0.0 --port 8001 --reload)",
+      "Bash(curl -s http://localhost:8001/docs)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -s -m 15 https://westcaldwell.tumbles.net/sitemap.xml)",
+      "Bash(curl -s -m 15 https://westcaldwell.tumbles.net/robots.txt)",
+      "Bash(curl -s -m 20 https://westcaldwell.tumbles.net/portal/find-a-class)",
+      "Bash(curl -s -m 20 https://westcaldwell.tumbles.net/gym-classes)",
+      "Bash(curl -s -m 12 __TRACKED_VAR__/classes/174)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\)['data']; print\\({k:d[k] for k in ['id','name','programName','levelName','tuition','tuitionTerm','minAgeYear','maxAgeYear','schedule','instructors']}\\)\")",
+      "Bash(curl -sL -m 18 https://__TRACKED_VAR__)",
+      "WebSearch",
+      "WebFetch(domain:trends.builtwith.com)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('fusion.py'\\).read\\(\\)\\); ast.parse\\(open\\('api.py'\\).read\\(\\)\\); print\\('OK both parse'\\)\")",
+      "Bash(python3 *)",
+      "Bash(lsof -ti:8001)",
+      "Bash(xargs kill -9)",
+      "Bash(/Users/mac/.venv/bin/python -m uvicorn api:app --host 0.0.0.0 --port 8001)",
+      "Bash(curl -s -m 3 http://localhost:8001/health)"
+    ]
+  }
+}

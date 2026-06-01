@@ -1,0 +1,5 @@
+url,elapsed_sec,program_count,expected_min,meets_expected_min,avg_completeness,missing_field_freq,provider_completeness,provider_missing,error
+https://example-childcare.com,4.7,0,3,False,0.0,{},0.0,"address,description,phone,email,categories",500 Server Error: Internal Server Error for url: http://localhost:8001/extract
+https://example-dance-studio.com,3.96,0,3,False,0.0,{},0.0,"address,description,phone,email,categories",500 Server Error: Internal Server Error for url: http://localhost:8001/extract
+,,,,,,,,,
+OVERALL (RUN),,0,,,0.0,,0.0,,

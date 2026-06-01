@@ -28,13 +28,47 @@ NON_HTML_EXTENSIONS: tuple[str, ...] = (
     ".jpg",
     ".jpeg",
     ".gif",
+    # calendar / feed / data downloads — Playwright treats these as file
+    # downloads ("Download is starting") and crashes instead of rendering.
+    ".ics",
+    ".ical",
+    ".ifb",
+    ".vcs",
+    ".vcf",
+    ".csv",
+    ".rss",
+    ".atom",
+    ".mp4",
+    ".mov",
+    ".webp",
+    ".svg",
+)
+
+# Query-string markers that force a file download (calendar exports, feeds).
+# A URL carrying any of these is not a renderable HTML page.
+NON_HTML_QUERY_MARKERS: tuple[str, ...] = (
+    "ical=1",
+    "ical=",
+    "outlook-ical=",
+    "format=ical",
+    "format=ics",
+    "type=ics",
+    "tribe-bar-format=",  # The Events Calendar (WordPress) export args
 )
 
 
 def _is_html_url(url: str) -> bool:
-    """Reject obvious non-HTML asset URLs (PDFs, Office, archives, images)."""
-    path = urlparse(url).path.lower()
-    return not path.endswith(NON_HTML_EXTENSIONS)
+    """Reject non-HTML URLs: asset/download extensions (PDF, image, archive) and
+    calendar/feed query markers (?ical=1) that make Playwright download a file
+    instead of rendering a page."""
+    parsed = urlparse(url)
+    path = parsed.path.lower()
+    if path.endswith(NON_HTML_EXTENSIONS):
+        return False
+    query = parsed.query.lower()
+    if query and any(marker in query for marker in NON_HTML_QUERY_MARKERS):
+        return False
+    return True
 
 
 PROGRAM_PATH_KEYWORDS: tuple[str, ...] = (

@@ -61,6 +61,10 @@ class ChromiumLoader(BaseLoader):
 
         dynamic_import(backend, message)
 
+        # Opt-in: abort image/css/font/media requests for faster text-only scraping.
+        # Pop BEFORE browser_config so it is not forwarded to browser.launch().
+        self.block_resources = kwargs.pop("block_resources", False)
+
         self.browser_config = kwargs
         self.headless = headless
         self.proxy = parse_or_search_proxy(proxy) if proxy else None
@@ -364,6 +368,18 @@ class ChromiumLoader(BaseLoader):
                         ignore_https_errors=True,
                     )
                     await Malenia.apply_stealth(context)
+                    if self.block_resources:
+                        # Skip non-text assets: text extraction never reads them, and
+                        # not downloading images/media/fonts/css speeds fetch 2-5x.
+                        await context.route(
+                            "**/*",
+                            lambda route: (
+                                route.abort()
+                                if route.request.resource_type
+                                in ("image", "media", "font", "stylesheet")
+                                else route.continue_()
+                            ),
+                        )
                     page = await context.new_page()
                     await page.goto(url, wait_until="domcontentloaded")
                     await page.wait_for_load_state(self.load_state)
